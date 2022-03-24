@@ -1,0 +1,35 @@
+.App {
+  margin: 1% auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.logo {
+  filter: invert(1);
+  width: 60px;
+  height: 60px;
+  margin: 20px 0;
+}
+
+.popular {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem 2rem;
+}
+
+.popular a {
+  text-decoration: none;
+  color: #000;
+}
+
+.movie img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.popular h2 {
+  font-size: 0.8rem;
+}
