@@ -7,12 +7,13 @@ import Movie from "./Movie";
 const Search = () => {
     const [search, setSearch] = useState('')
     const [term, setTerm] = useState('avengers')
-    const {error, isPending, data: movies } = useFetch(`http://www.omdbapi.com/?s=${term}&apikey=474a7c0d`)
+    const {error, isPending, data: movies } = useFetch(`https://www.omdbapi.com/?s=${term}&apikey=474a7c0d`)
     
     // console.log(search)
     const handleSearch = (e) => {
         e.preventDefault()
         setTerm(search)
+        setSearch('')
     }
 
 
