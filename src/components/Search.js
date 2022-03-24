@@ -23,9 +23,9 @@ const Search = () => {
                 <input type="text" name="search" placeholder="search any movie" onChange={(e) => {setSearch(e.target.value)}} value={search} />
             </form>
 
+            { isPending && <div>Loading...</div> }
+            { error && <div>{ error }</div> }
             <div className="movie-container">
-                { isPending && <div>Loading...</div> }
-                { error && <div>{ error }</div> }
                 {movies && movies.map(movie => {
                     return <Movie key={movie.imdbID} movie={movie} />
                 })}
