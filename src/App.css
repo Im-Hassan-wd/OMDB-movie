@@ -6,9 +6,27 @@
 .navbar {
   background: #292929;
   color: #fff;
-  height: 10vh;
+  height: 15vh;
   display: flex;
   align-items: center;
+  padding-left: 50px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner h1 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  /* transform: translate(-50% -10%); */
+  font-size: 72px;
+  color: #fff;
+  font-weight: 700;
+  max-width: 200px;
+  line-height: 94px;
+  letter-spacing: -0.05em;
 }
 
 .popular {

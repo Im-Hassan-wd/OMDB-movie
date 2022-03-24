@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import Banner from "./Banner";
 import Footer from "./Footer";
 import Movie from "./Movie";
 import Navbar from "./Navbar";
+import Search from "./Search";
 
 const Home = () => {
     const [movies, setMovies] = useState(null);
@@ -30,6 +32,8 @@ const Home = () => {
 
     return (
         <div className="home">
+            <Banner />
+            <Search />
             <div className="popular">
                 { isPending && <div>Loading...</div> }
                 { error && <div>{ error }</div> }
