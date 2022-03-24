@@ -14,20 +14,14 @@ const movieTitles =  [
 const Home = () => {
     const {error, isPending, data: movies } = useFetch('http://www.omdbapi.com/?s=avengers&apikey=474a7c0d')
 
+
+
     return (
         <div className="home">
             <Banner />
             <div className="container">
                 <Search />
-                <div className="movie-container">
-                    { isPending && <div>Loading...</div> }
-                    { error && <div>{ error }</div> }
-                    {movies && movies.map(movie => {
-                        return <Movie key={movie.imdbID} movie={movie} />
-                    })}
-                </div>
-                { !isPending && <Footer />}
-                </div>
+            </div>
         </div>
     );
 }

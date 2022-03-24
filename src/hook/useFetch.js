@@ -39,5 +39,5 @@ export const useFetch = (url) => {
 
   }, [url])
 
-  return { data, isPending, error }
+  return { data, isPending, error, setData }
 }
