@@ -1,4 +1,8 @@
-const Search = () => {
+const Search = ({movie}) => {
+
+    const handleSearch = () => {
+      
+    }
     return (
       <div className="search">
         <label htmlFor="search">Search</label>
