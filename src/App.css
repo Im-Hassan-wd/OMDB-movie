@@ -85,6 +85,10 @@
   transform: translate(-50%, -50%);
 }
 
+.most-search {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 840px) {
   .banner h1 {
     text-align: center;
