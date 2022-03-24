@@ -24,6 +24,7 @@ const Search = () => {
                 <input type="text" name="search" placeholder="search any movie" onChange={(e) => {setSearch(e.target.value)}} value={search} />
             </form>
 
+            <h2 className="most-search">Most searched movies</h2>
             { isPending && <div>Loading...</div> }
             { error && <div>{ error }</div> }
             <div className="movie-container">

@@ -19,14 +19,14 @@ export const useFetch = (url) => {
         const data = await res.json()
 
         setIsPending(false)
-        setData(data.Search)
+        setData(data.Search);
         setError(null)
       } catch (err) {
         if (err.name === "AbortError") {
           console.log("the fetch was aborted")
         } else {
           setIsPending(false)
-          setError('Could not fetch the data')
+          setError('Could not fetch the data. Please check your network router');
         }
       }
     }
